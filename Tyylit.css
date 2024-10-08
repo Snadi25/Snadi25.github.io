@@ -1,0 +1,165 @@
+/*
+div{
+    border: 1px;
+    border-color: white;
+    border-style: solid;
+}
+*/
+body {
+    background-color: Canvas;
+    color: CanvasText;
+    color-scheme: light dark;
+  }
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("kuva.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.header h1 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding: 300px 10px 120px 10px;
+    backdrop-filter: blur(0.7px);
+}
+
+.otsikko {
+    width: 90%;
+    margin: auto;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+}
+
+.esittely {
+    font-size: 25px;
+}
+
+#valikko {
+    text-align: center;
+    width: 100%;
+}
+
+#valikko ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+    
+}
+
+li:last-child{
+    border-right: none;
+}
+
+li a {
+    display: block;
+    padding: 10px 52px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #121212;
+    color: white;    
+}
+
+li a:hover:not(.active) {
+    background-color: #c20114;
+
+}
+
+.active {
+    background-color: #c20114;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+  }
+
+  .nappi {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    background-color: #c20114;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .nappi:hover {
+    background-color: #6D7275;
+  }
+
+  .kentät {
+    margin: auto;
+    border-radius: 10px;
+    background-color: #8080801f;
+    padding: 20px;
+    max-width: 1400px;
+  }
+
+@media only screen and (min-width: 800px) {
+    .otsikko {
+        width: 75%;
+        margin-top: 60px;
+    }
+    .content {
+        width: 75%;
+        margin-top: 60px;
+    }
+
+    .header h1 {
+        font-size: 50px;
+        padding: 200px 10px 200px 10px;
+    }
+
+    #valikko ul {
+        list-style-type: none;
+        padding: 10px;
+        top: 0;
+    }
+
+    
+  }
+
+  @media only screen and (min-width: 1350px) {
+    .header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("kuva.jpg");
+        background-position: center;
+        padding: 20px;
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+
+    .kentät {
+        margin: 0 auto;
+        width: 100%;
+    }
+  }
+
