@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
     <title>Netti CV</title>
     <meta charset="UTF-8">
@@ -10,7 +11,8 @@
 
 <body>
     <div class="content">
-        <p class="esittely">Täällä on yhteydenotto sivu jossa on tekstikenttiä johon laittaa sposti ja viesti yms yms</p>
+        <p class="esittely">Täällä on yhteydenotto sivu jossa on tekstikenttiä johon laittaa sposti ja viesti yms yms
+        </p>
     </div>
     <div id="valikko">
         <ul>
@@ -21,21 +23,22 @@
     </div>
 
     <div class="kentät">
-        <label for="enimi">Etunimi</label>
-        <input type="text" id="enimi" name="etunimi" placeholder="Etunimi...">
+        <form action="mailto:toni.parhiala@gmail.com" method="get" enctype="text/plain">
+            <label for="enimi">Etunimi</label>
+            <input type="text" id="enimi" name="etunimi" placeholder="Etunimi...">
 
-        <label for="snimi">Sukunumi</label>
-        <input type="text" id="snimi" name="sukunimi" placeholder="Sukunimi...">
+            <label for="snimi">Sukunumi</label>
+            <input type="text" id="snimi" name="sukunimi" placeholder="Sukunimi...">
 
-        <label for="sposti">Sähköposti</label>
-        <input type="text" id="sposti" name="sposti" placeholder="matti.meikäläinen@sposti.com">
+            <label for="sposti">Sähköposti</label>
+            <input type="text" id="sposti" name="sposti" placeholder="matti.meikäläinen@sposti.com">
 
-        <label for="aihe">Aihe</label>
-    <textarea id="aihe" name="aihe" placeholder="Mitä mielessä...?" style="height:200px"></textarea>
+            <label for="aihe">Aihe</label>
+            <textarea id="aihe" name="aihe" placeholder="Mitä mielessä...?" style="height:200px"></textarea>
 
-    <button class="nappi">Lähetä</button>
+            <input type="submit" value="Lähetä">
 
-
+        </form>
 
     </div>
 
