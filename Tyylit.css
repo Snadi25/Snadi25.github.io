@@ -40,6 +40,11 @@ body {
     font-size: 25px;
 }
 
+.työpaikka {
+    font-size: 20px;
+    color: #c20114a2;
+}
+
 #valikko {
     text-align: center;
     width: 100%;
